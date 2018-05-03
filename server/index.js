@@ -5,4 +5,6 @@ app.get('/', (request, response) => {
 	response.send({ hi: 'there' });
 });
 
-app.listen(5000);
+// set port dynamically
+const PORT = process.env.PORT || 5000;
+app.listen(PORT);
